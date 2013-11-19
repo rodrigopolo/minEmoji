@@ -1,5 +1,4 @@
 #minEmoji
-========
 
 A small JavaScript/CSS library to replace Unicode Emoji into CSS <span> images.
 
@@ -21,6 +20,12 @@ Just include the CSS and JS into your HTML document and call the function `minEm
 ```javascript
 $('#div').html(minEmoji(string));
 ```
+-------
+
+#Why another library?
+
+Here is a post with the huge emoji image source files and full explanation: 
+http://rodrigopolo.com/codigo/minemoji-another-emoji-js-library.html
 
 -------
 
