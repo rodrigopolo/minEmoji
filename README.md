@@ -1,9 +1,10 @@
 #minEmoji
 
-A small JavaScript/CSS library to replace Unicode Emoji into CSS <span> images.
+A small JavaScript/CSS library to replace Unicode Emoji into CSS <span> images
 
-jQuery isn't required.
+jQuery isn't required by this library.
 
+[See the demo](http://rodrigopolo.github.io/minEmoji/demo.html)
 
 ##Usage:
 
