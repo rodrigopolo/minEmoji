@@ -1,7 +1,6 @@
 .em {
 	width: 20px; height: 20px; display: -moz-inline-stack;
 	display: inline-block;
-	vertical-align: top; 
 	zoom: 1; 
 	*display: inline;
 	background: url("../img/sprite_1.png") top left no-repeat;
