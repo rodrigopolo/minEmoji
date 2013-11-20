@@ -11,7 +11,7 @@ jQuery isn't required by this library.
 Just include the CSS and JS into your HTML document and call the function `minEmoji(string)` to replace a desired text.
 
 ```html
-<link href="css/emj.css" rel="stylesheet">
+<link href="css/minEmoji.css" rel="stylesheet">
 ```
 
 ```html
