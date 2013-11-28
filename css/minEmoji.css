@@ -1,5 +1,5 @@
 .em {
-	background: url("../img/sprite_1.png") top left no-repeat;
+	background: url(../img/apple_sprite.png) top left no-repeat;
 	width: 20px;
 	height: 20px;
 	display: -moz-inline-stack;
@@ -14,7 +14,7 @@ only screen and (-moz-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 3/2),
 only screen and (min-device-pixel-ratio: 1.5) {
 	.em {
-        background-image: url(../img/sprite_1x2.png);
+        background-image: url(../img/apple_sprite@2x.png);
         background-size: 140px 2440px;
 	}
 }*/
