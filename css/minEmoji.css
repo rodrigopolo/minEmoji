@@ -1,9 +1,11 @@
 .em {
-	width: 20px; height: 20px; display: -moz-inline-stack;
-	display: inline-block;
-	zoom: 1; 
-	*display: inline;
 	background: url("../img/sprite_1.png") top left no-repeat;
+	width: 20px;
+	height: 20px;
+	display: -moz-inline-stack;
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
 }
 
 /* CSS for high-resolution devices (HiDPI), you can add this if you don't want it */
