@@ -1,14 +1,39 @@
-#minEmoji
+#minEmoji and jMinEmoji
 
-A small JavaScript/CSS library to replace Unicode Emoji into CSS <span> images
+A small JavaScript/CSS library and jQuery Plug-in to replace Unicode Emoji into CSS Sprite images using `<span>` element, Apple, Google and Twitter Sprites on PNG.
 
-jQuery isn't required by this library.
+[jQuery Demo](http://rodrigopolo.github.io/minEmoji/jMinEmoji/demo.html)  
+[Simple Demo](http://rodrigopolo.github.io/minEmoji/demo.html)
 
-[See the demo](http://rodrigopolo.github.io/minEmoji/demo.html)
+##Usage as jQuery plugin:
+Include the CSS and JS into your HTML and apply the `minEmoji()` function to any jQuery selector: 
 
-##Usage:
+```html
+<link href="css/minEmoji.css" rel="stylesheet">
+```
 
-Just include the CSS and JS into your HTML document and call the function `minEmoji(string)` to replace a desired text.
+```html
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="js/jMinEmoji.js"></script>
+```
+
+```javascript
+$(function(){
+	$('.txt').minEmoji();
+});
+```
+
+**iOS and Apple Devices**: jMinEmoji doesn't replace Emoji on Safari, but you can force that behavior passing `true` to the function:
+
+```javascript
+$(function(){
+	$('.txt').minEmoji(true);
+});
+```
+
+##Usage as JavaScript function:
+
+Include the CSS and JS into your HTML document and call the function `minEmoji(string)` to replace a desired text.
 
 ```html
 <link href="css/minEmoji.css" rel="stylesheet">
@@ -21,6 +46,8 @@ Just include the CSS and JS into your HTML document and call the function `minEm
 ```javascript
 $('#div').html(minEmoji(string));
 ```
+
+
 -------
 
 #Why another library?
