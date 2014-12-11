@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Convert</title>
+    <meta charset="UTF-8">
+    <!-- Emoji CSS Styles -->
+    <link href="css/minEmoji.css" rel="stylesheet">
+</head>
+<style>
+    #atextarea{
+        width: 640px;
+        height: 480px;
+    }
+    #acont{
+        white-space: pre-wrap;
+    }
+</style>
+<body>
+    <textarea id="atextarea"></textarea><br>
+    <button id="action">Go</button>
+
+    <!-- To show te result -->
+    <div id="acont"></div>
+
+    <!-- jQuery needed for this demo, the minEmoji library doesn't require it -->
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+    <!-- The minEmoji JS library -->
+    <script src="js/minEmoji.js"></script>
+
+    <!-- "all_emojis_for_test_only.js" is for testing purposes only  -->
+    <script src="js/all_emojis_for_test_only.js"></script>
+
+    <!-- Scripr for this demo -->
+    <script>
+
+        $('#action').click(function(){
+            var tbox = $('#atextarea').val();
+            $('#acont').html(minEmoji(tbox));
+        });
+
+        // Fill the text area at first run.
+        $('#atextarea').val(all_emojis_for_test_only);
+
+        // Emoji on Windows 8.1 in textarea, Emoji color using IE 11
+        if(/windows nt 6.3/.test(navigator.userAgent.toLowerCase())){
+            $('#atextarea').css({
+                'font-size' : '20px',
+                'font-family': '"Segoe UI Emoji", "Segoe UI Symbol"'
+            });
+        }
+
+    </script>
+</body>
+</html>

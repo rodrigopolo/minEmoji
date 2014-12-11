@@ -4,19 +4,21 @@
 	<meta charset="utf-8">
 	<title>GoTweet.me conversation archive - RodrigoPolo &amp; RodrigoPolo.</title>
 </head>
-<link href="css/demo.css" rel="stylesheet">
+<style> 
+  html{font-size:62.5%;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;line-height:1.428571429;color:#333;background-color:#fff;margin:0}a{color:#428bca;text-decoration:none}a:hover,a:focus{color:#2a6496;text-decoration:underline}a:focus{outline:thin dotted #333;outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}img{vertical-align:middle}h1{margin:.67em 0;font-size:2em}strong{font-weight:bold}img{border:0}small{font-size:85%}.pull-right{float:right !important}.pull-left{float:left !important}p{margin:0 0 10px}.left{margin-bottom:10px}.left .chat-avatar{width:50px;height:50px;margin-right:10px;margin-top:10px;box-shadow:inset 0 0 0 7px rgba(247,247,247,.9);-webkit-box-shadow:inset 0 0 0 7px rgba(247,247,247,.9)}.message{padding:10px;border-radius:12px;position:relative;display:block}.left .message{margin-left:65px;background:#e1e8ed;color:#292f33}.right .message{margin-right:65px;background:#3383dc;color:#FFF}.left .message .arrow-left{position:absolute;top:25%;left:-10px;width:0;height:0;border-top:10px solid transparent;border-bottom:10px solid transparent;border-right:10px solid #e1e8ed}.right{margin-bottom:10px}.right .chat-avatar{width:50px;height:50px;margin-left:10px;margin-top:10px;box-shadow:inset 0 0 0 7px rgba(247,247,247,.9);-webkit-box-shadow:inset 0 0 0 7px rgba(247,247,247,.9)}.right .message a{color:#fff}.right .chat-avatar img,.left .chat-avatar img{border-radius:3px}.right .message .arrow-right{position:absolute;top:25%;right:-10px;width:0;height:0;border-top:10px solid transparent;border-bottom:10px solid transparent;border-left:10px solid #3383dc}#chat{width:400px;margin:0 auto;padding: 8px;}h3{font-size:24px;font-weight:500;height:26px;line-height:26px;margin-bottom:10px;margin-top:0}.end{text-align:center}.txt{white-space: pre-wrap}
+</style>
 <link href="css/jMinEmoji-SVG.css" rel="stylesheet">
 <body>
 	<div id="chat">
 		<h3>jMinEmoji-SVG Demo</h3>
 		<p><small>A jQuery Plug-in for Emoji replacement.</small></p>
 
-  <div class="right">
-    <div class="chat-avatar pull-right">
+  <div class="left">
+    <div class="chat-avatar pull-left">
     <img src="http://avatars.io/gravatar/0ab1145e938237a169da5fbc7f6b20c5" alt="avatar" width="48" height="48">
     </div>
     <div class="message">
-      <div class="arrow-right"></div>
+      <div class="arrow-left"></div>
       <p><strong>@RodrigoPolo</strong> <small>3:03PM 7-May-14</small></p>
       <p class="txt">😊</p>
     </div>
@@ -33,12 +35,12 @@
     </div>
   </div>
 
-  <div class="right">
-    <div class="chat-avatar pull-right">
+  <div class="left">
+    <div class="chat-avatar pull-left">
     <img src="http://avatars.io/gravatar/0ab1145e938237a169da5fbc7f6b20c5" alt="avatar" width="48" height="48">
     </div>
     <div class="message">
-      <div class="arrow-right"></div>
+      <div class="arrow-left"></div>
       <p><strong>@RodrigoPolo</strong> <small>3:03PM 7-May-14</small></p>
       <p class="txt">🎃👻🎅🎄</p>
     </div>
@@ -55,16 +57,39 @@
     </div>
   </div>
 
+  <div class="right">
+    <div class="chat-avatar pull-right">
+    <img src="http://avatars.io/gravatar/0ab1145e938237a169da5fbc7f6b20c5" alt="avatar" width="48" height="48">
+    </div>
+    <div class="message">
+      <div class="arrow-right"></div>
+      <p><strong>@RodrigoPolo</strong> <small>3:03PM 7-May-14</small></p>
+      <p class="txt" id="fromjs">[Click me to load the complete emoji set]</p>
+    </div>
+  </div>
+
 	<p class="end"><small>&copy; <a href="http://rodrigopolo.com" target="_blank">2014 RodrigoPolo.com</a></small></p>
 	</div>
 
+  <!-- "all_emojis_for_test_only.js" is for testing purposes only  -->
+  <script src="../minEmoji/js/all_emojis_for_test_only.js"></script>
   
+  <!-- jQuery  -->
   <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="js/jMinEmoji-SVG.js"></script>
   <script>
   // Run after the DOM is ready
   $(function(){
+
+    // Apply minEmojiSVG yo the '.txt' selector.
     $('.txt').minEmojiSVG();
+
+    // Appending content from JS, jQuery chainability to apply minEmojiSVG
+    $('#fromjs').click(function(){
+      $('#fromjs').text(all_emojis_for_test_only).minEmojiSVG();
+    });
+
+
   });
   </script>
 
