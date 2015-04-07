@@ -1,0 +1,22 @@
+{
+  "name": "minEmoji",
+  "version": "1.0.0",
+  "homepage": "https://github.com/rodrigopolo/minEmoji",
+  "authors": [
+    "Rodrigo Polo <rodrigo.polo@gmail.com>"
+  ],
+  "description": "The smallest JavaScript/CSS library and jQuery Plug-in to replace Unicode Emoji into CSS Sprite images using <span> element, Apple, Google and Twitter Sprites on PNG, Twitter SVG emojis.",
+  "keywords": [
+    "emoji",
+    "replacement",
+    "jQuery",
+    "javascript"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
