@@ -5,6 +5,7 @@ The smallest JavaScript/CSS library and jQuery Plug-in to replace Unicode Emoji 
 [jMinEmoji-SVG Demo](http://rodrigopolo.github.io/minEmoji/jMinEmoji-SVG/demo.html)  
 [jMinEmoji Demo](http://rodrigopolo.github.io/minEmoji/jMinEmoji/demo.html)  
 [minEmoji Demo](http://rodrigopolo.github.io/minEmoji/minEmoji/demo.html)  
+Early [minEmoji_iOS8 Demo](http://rodrigopolo.github.io/minEmoji/minEmoji_iOS8/demo.html)  
 
 ##jMinEmoji-SVG jQuery plugin:
 
