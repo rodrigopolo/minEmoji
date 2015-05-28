@@ -1,11 +1,39 @@
-#minEmoji, jMinEmoji and jMinEmoji-SVG
+#minEmoji Collection
 
-The smallest JavaScript/CSS library and jQuery Plug-in to replace Unicode Emoji into CSS Sprite images using `<span>` element, Apple, Google and Twitter Sprites on PNG, [Twitter SVG emojis](https://github.com/twitter/twemoji).
+The smallest JavaScript/CSS libraries and jQuery Plug-ins to replace Unicode Emoji into CSS Sprite images using `<span>` element, Apple, Google and Twitter Sprites or PNG, [Twitter SVG emojis](https://github.com/twitter/twemoji).
 
+[jMinEmoji2 Demo](http://rodrigopolo.github.io/minEmoji/jMinEmoji2/demo.html)  
 [jMinEmoji-SVG Demo](http://rodrigopolo.github.io/minEmoji/jMinEmoji-SVG/demo.html)  
 [jMinEmoji Demo](http://rodrigopolo.github.io/minEmoji/jMinEmoji/demo.html)  
 [minEmoji Demo](http://rodrigopolo.github.io/minEmoji/minEmoji/demo.html)  
-Early [minEmoji_iOS8 Demo](http://rodrigopolo.github.io/minEmoji/minEmoji_iOS8/demo.html)  
+[minEmoji_iOS8 Demo](http://rodrigopolo.github.io/minEmoji/minEmoji_iOS8/demo.html)  
+
+>**Careful**: Only jMinEmoji2 and minEmoji_iOS8 are ready for the new emoji set found in iOS8, please read the notes on this version [here](https://github.com/rodrigopolo/minEmoji/blob/master/jMinEmoji2/README.md).
+
+##jMinEmoji2 jQuery plugin:
+iOS8 ready, a simple solution using PNG Sprites, usage: Include the CSS and JS into your HTML and apply the `minEmoji()` function to any jQuery selector.
+
+```html
+<link href="css/minEmoji2.css" rel="stylesheet">
+```
+
+```html
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="js/jMinEmoji2.js"></script>
+<script>
+	$(function(){
+		$('.txt').minEmoji();
+	});	
+</script>
+```
+
+**iOS and Apple Devices**: jMinEmoji doesn't replace Emoji on Safari, but you can force that behavior passing `true` to the function:
+
+```javascript
+$(function(){
+	$('.txt').minEmoji(true);
+});
+```
 
 ##jMinEmoji-SVG jQuery plugin:
 
