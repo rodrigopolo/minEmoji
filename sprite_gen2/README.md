@@ -1,5 +1,10 @@
 ## Updated Sprite Generator
 
+### Extract PNGs images from `Apple Color Emoji.ttf` on OS X
+```
+ruby emoji_extractor.rb
+```
+
 ### 1. Generate the SVG
 ```
 node sprite_gen.js > sprite.svg
@@ -23,8 +28,25 @@ node cssgen.js > sprite.css
 [OptiPNG](http://optipng.sourceforge.net/)  
 [AdvanceCOMP](http://advancemame.sourceforge.net/comp-download.html)  
 
-You can install optipng from homebrew, for AdvanceCOMP you have to compile it yourself.
-````
+### PNG Optimization tools on OS X
+
+You'll need to have installed Xcode, then [Homebrew](http://brew.sh/).
+
+Install OptiPNG
+```
 brew install optipng
+```
+
+Download AdvanceCOMP source:
+[http://www.advancemame.it/comp-download.html](http://www.advancemame.it/comp-download.html)
+
+Compile AdvanceCOMP:
+```
+tar xzf advancecomp-1.19.tar.gz
+cd advancecomp-1.19
+./configure
+make
+sudo cp advdef /usr/local/bin/advdef
+sudo cp advpng /usr/local/bin/advpng
 ```
 

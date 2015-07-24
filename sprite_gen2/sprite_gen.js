@@ -22,7 +22,7 @@ for (var i = 0; i < ios8emoji.length; i++) {
 			rimgs+='\n';
 		}
 	}
-	rimgs+='<image x="'+(img_x*tile_w)+'" y="'+(img_y*tile_h)+'" width="'+tile_w+'" height="'+tile_h+'" xlink:href="img/'+ios8emoji[i].ap+'.png"/>\n';
+	rimgs+='<image x="'+(img_x*tile_w)+'" y="'+(img_y*tile_h)+'" width="'+tile_w+'" height="'+tile_h+'" xlink:href="images/160x160/'+ios8emoji[i].ap+'.png"/>\n';
 	img_x++;
 };
 
