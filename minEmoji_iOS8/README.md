@@ -16,7 +16,7 @@ http://blog.emojipedia.org/apple-2015-emoji-changelog-ios-os-x
 More info about twemoji:
 https://github.com/twitter/twemoji
 
-UPDATE: There are good news, Emoji One is promising all Unicode 8.0 emojis in his next release, wich means there will be more options and SVG emojis:
+UPDATE: There are good news, Emoji One is promising all Unicode 8.0 emojis in their next release, wich means there will be more options and SVG emojis:
 
 https://twitter.com/emojione/status/639919754707398657
 
