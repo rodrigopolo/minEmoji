@@ -6,7 +6,7 @@ var ios9_1emoji = require('./ios9_1emoji.json');
 var tile_w=20;
 var tile_h=20;
 
-var cols = 5;
+var cols = 6;
 
 
 // Code

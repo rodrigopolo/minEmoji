@@ -6,7 +6,7 @@ var ios9_1emoji = require('./ios9_1emoji2.json');
 var tile_w=160;
 var tile_h=160;
 
-var cols = 5;
+var cols = 6;
 
 
 // Code
@@ -29,7 +29,7 @@ for (var i = 0; i < ios9_1emoji.length; i++) {
 };
 
 var svg = '<svg version="1.1" baseProfile="tiny" id="svg-root"'
-+ '  width="'+(tile_w*cols)+'" height="'+(tile_h*img_y)+'" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">\n'
++ '  width="'+(tile_w*cols)+'" height="'+(tile_h*(img_y+1))+'" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">\n'
 + '<title>Emoji</title>\n'
 + '<g>\n'
 + rimgs

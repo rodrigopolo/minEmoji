@@ -12,7 +12,7 @@ ruby emoji_extractor.rb
 
 ### 2. Create an optimized PNG from the SVG
 ```
-convert -background none sprite.svg -scale 100x6540 -depth 8 ios9_1emoji.png
+convert -background none sprite.svg -scale 120x5440 -depth 8 ios9_1emoji.png
 optipng -o7 ios9_1emoji.png && advpng -z -4 ios9_1emoji.png && advdef -z -4 ios9_1emoji.png
 ```
 
