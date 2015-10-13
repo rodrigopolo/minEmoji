@@ -1,4 +1,4 @@
-/*! jMinEmoji v1.0.0 | (c) 2014 RodrigoPolo.com | https://github.com/rodrigopolo/minEmoji/blob/master/LICENSE */
+/*! jMinEmoji v2.0.0 | (c) 2014 RodrigoPolo.com | https://github.com/rodrigopolo/minEmoji/blob/master/LICENSE */
 (function($){
 	function ca(r){for(var t="",n=0;n<r.length;n++)t+="\\u"+("000"+r[n].charCodeAt(0).toString(16)).substr(-4);return t}
 	var is_safari = (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1 && navigator.userAgent.indexOf('Android') == -1 && navigator.userAgent.indexOf('PhantomJS') == -1);
@@ -8,7 +8,7 @@
 		regx_arr.push(ca(k));
 	}
 	var regx = new RegExp('(' + regx_arr.join('|') + ')', 'g');
-	regx_arr = null;	
+	regx_arr = null;
 	function ei(s,ons){
 		return (is_safari && !ons)?s:s.replace(regx, function (a, b) {return '<span class="em emj'+emoji[b]+'"></span>';});
 	}
