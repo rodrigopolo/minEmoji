@@ -1,0 +1,15 @@
+{
+  "name": "Emoji-Data-Parser",
+  "version": "1.0.0",
+  "description": "Parse the Emoji Data to a JSON object.",
+  "main": "parser.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rodrigo Polo",
+  "license": "MIT",
+  "dependencies": {
+    "js-beautify": "^1.6.3",
+    "split": "^1.0.0"
+  }
+}
