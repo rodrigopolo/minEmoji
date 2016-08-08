@@ -41,11 +41,14 @@
         $('#atextarea').val(all_emojis_for_test_only);
 
         // Emoji on Windows 8.1 in textarea, Emoji color using IE 11
-        if(/windows nt 6.3/.test(navigator.userAgent.toLowerCase())){
-            $('#atextarea').css({
-                'font-size' : '20px',
-                'font-family': '"Segoe UI Emoji", "Segoe UI Symbol"'
-            });
+        var m;
+        if(m = /\Wwindows nt ([\d.]+);/i.exec(navigator.userAgent)){
+            if(parseFloat(m[1])>8){
+                $('#atextarea').css({
+                    'font-size' : '20px',
+                    'font-family': '"Segoe UI Emoji", "Segoe UI Symbol"'
+                });
+            }
         }
 
     </script>
