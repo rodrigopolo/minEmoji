@@ -1,15 +1,17 @@
 #minEmoji Collection
 
-The smallest JavaScript/CSS libraries and jQuery Plug-ins to replace all new Emojis into CSS Sprite images using `<span>` and `<img>` elements, Apple, Google/Android, Emoji One and Twitter Sprites included.
+Old JavaScript/CSS libraries and jQuery Plug-ins to convert Emojis into CSS Sprite images using `<span>` and `<img>` elements.
 
->**IMPORTANT** As from august 2016 I'll only keep the iOS/macOS version of jMinEmoji updated because trying to keep track of other emoji image assets is very time consuming, I'll release another git/npm/bower version focused only on the Apple version to keep things small and clean as it is the original purpose of this project.
+## IMPORTANT
+This repo is no longer maintained in favor of the new emoji library, is simpler, lighter and faster:  
+* New Library: https://github.com/rodrigopolo/jqueryemoji  
+* Check the Demo: https://rodrigopolo.github.io/jqueryemoji  
 
-![emojis](splash.png "emojis")
 
-### Latest
+#### Previous Version
 [minEmoji_iOS10 Demo](http://rodrigopolo.github.io/minEmoji/minEmoji_iOS10/demo.html)   
 
-### Legacy (Old versions)
+#### Older versions
 [jMinEmoji2 Demo](http://rodrigopolo.github.io/minEmoji/jMinEmoji2/demo.html)  
 [minEmoji_iOS8 Demo](http://rodrigopolo.github.io/minEmoji/minEmoji_iOS8/demo.html)  
 [jMinEmoji-SVG Demo](http://rodrigopolo.github.io/minEmoji/jMinEmoji-SVG/demo.html) Some SVGs are not available.  
