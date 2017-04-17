@@ -1,4 +1,4 @@
-#jMinEmoji2
+# jMinEmoji2
 Please don't hate me, I know this is in bower, I know I could just upgrade the darn script, BUT...
 There are so many different things to take into consideretion, heare a few of them:
 
